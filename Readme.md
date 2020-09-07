@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ева Усс](https://up.htmlacademy.ru/htmlcss/29/user/46925).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
 
 ---
 
