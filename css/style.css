@@ -1,0 +1,362 @@
+/* fonts */
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto'),
+      url('../fonts/roboto.woff2') format('woff2'),
+      url('../fonts/roboto.woff') format('woff');
+  display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto'),
+      url('../fonts/robotomedium.woff2') format('woff2'),
+      url('../fonts/robotomedium.woff') format('woff');
+  display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Roboto'),
+      url('../fonts/robotobold.woff2') format('woff2'),
+      url('../fonts/robotobold.woff') format('woff');
+  display: swap;
+}
+
+/* variables */
+
+:root {
+
+  /* main */
+
+  --white: #FFFFFF;
+  --dark: #323232;
+
+  /* white with transparency */
+
+  --white-2: rgba(255, 255, 255, 0.2);
+  --white-3: rgba(255, 255, 255, 0.3);
+  --white-4: rgba(255, 255, 255, 0.4);
+  --white-5: rgba(255, 255, 255, 0.5);
+  --white-7: rgba(255, 255, 255, 0.7);
+  --white-8: rgba(255, 255, 255, 0.8);
+
+  /* header */
+
+  --header-logo: #FBFCFB;
+
+  /* main page */
+
+  --hit-bg: #231F20;
+  --blog-underline: #353535;
+  --main-contacts-bg: #FEFEFE;
+  --slider-bg-1: rgba(215, 242, 227, 0.75);
+  --main-bg-1: #849D8F;
+  --slider-bg-2: rgba(218, 228, 239, 0.75);
+  --main-bg-2: #8996A6;
+  --slider-bg-3: rgba(239, 224, 218, 0.75);
+  --main-bg-3: #9D8B84;
+  --berry-bg: #71172F;
+  --choco-bg: #331C13;
+  --benefits-bg: #F2E6CF;
+  --map-bg: #EEE6CA;
+
+  /* products */
+
+  --price-text-shadow: rgba(49, 50, 53, 0.5);
+  --item-box-shadow-active: rgba(0, 0, 0, 0.2);
+
+  /* forms */
+
+  --placeholder: #999999;
+  --subscription-text: #5A5A5A;
+  --subscription-input-border: rgba(178, 178, 178, 0.52);
+  --input-border: #D3D3D2;
+  --form-bg: #F8F7F4;
+  --input-border-active: rgba(46, 136, 228, 0.52);
+
+  /* menu */
+
+  --menu-list-border: rgba(50, 50, 50, 0.2);
+  --menu-list-box-shadow: rgba(0, 0, 0, 0.4);
+  --catalog-bg-active: #EDEDED;
+  --catalog-box-shadow-active: #696969;
+  --bg-onpage: #D07058;
+  --menu-item-bg-hover: #FBDED7;
+  --menu-item-bg-active: #F6B5A5;
+
+  /* cart */
+
+  --cart-close: #2C2829;
+  --cart-weight: #000000;
+  --cart-border: #CACAC7;
+
+  /* link */
+
+  --link-text-hover: #FFBC9E;
+  --link-underline-hover: rgba(255, 188, 158, 0.3);
+  --link-lightbg-underline: rgba(50, 50, 50, 0.3);
+  --link-lightbg-text-hover: #E84D37;
+  --link-lightbg-underline-hover: rgba(232, 77, 55, 0.3);
+
+  /* button */
+
+  --btn-text-shadow: rgba(160, 32, 11, 0.76);
+  --btn-linear-gradient-1: #F26843;
+  --btn-linear-gradient-2: #E74A35;
+  --btn-box-shadow: rgba(172, 16, 0, 0.64);
+  --btn-popup-box-shadow: rgba(172, 16, 0, 0.25);
+  --btn-box-shadow-hover: #AC1000;
+  --btn-box-shadow-active: #942718;
+  --btn-linear-gradient-active: rgba(0, 0, 0, 0.07);
+  --btn-middle-box-shadow: rgba(85, 8, 0, 0.54);
+
+  /* filters */
+
+  --arrow-bg: #ECF1EE;
+  --filter-button-bg: #ABABAB;
+  --filter-border: rgba(248, 247, 244, 0.5);
+}
+
+/* global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: var(--white);
+  background-color: var(--main-bg-1);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a.button {
+  color: var(--white);
+  text-decoration: none;
+  text-shadow: 0px 2px 5px var(--btn-text-shadow);
+  background: linear-gradient(180deg, var(--btn-linear-gradient-1) 0%, var(--btn-linear-gradient-2) 100%);
+  box-shadow: 0px 2px 2px var(--btn-box-shadow);
+}
+a.middle-button {
+  box-shadow: 0px 2px 2px var(--btn-middle-box-shadow);
+}
+/* для большой кнопки на слайдере
+.main-button:hover {
+  background: linear-gradient(0deg, var(--white-2),var(--white-2)), linear-gradient(180deg, var(--btn-linear-gradient-1) 0%, var(--btn-linear-gradient-2) 100%);
+  box-shadow: 0px 2px 2px var(--btn-box-shadow-hover);
+}
+.main-button:active {
+  background: linear-gradient(0deg, var(--btn-linear-gradient-active), var(--btn-linear-gradient-active)), linear-gradient(180deg, var(--btn-linear-gradient-1) 0%, var(--btn-linear-gradient-2) 100%);
+  box-shadow: inset 0px 2px 2px var(--btn-box-shadow-active);
+}*/
+.middle-button:hover {
+  background: linear-gradient(0deg, var(--white-2), var(--white-2)), linear-gradient(180deg, var(--btn-linear-gradient-1) 0%, var(--btn-linear-gradient-2) 100%);
+  box-shadow: 0px 1px 2px var(--btn-box-shadow-hover);
+}
+.middle-button:active {
+  background: linear-gradient(0deg, var(--btn-linear-gradient-active), var(--btn-linear-gradient-active)), linear-gradient(180deg, var(--btn-linear-gradient-1) 0%, var(--btn-linear-gradient-2) 100%);
+  box-shadow: inset 0px 2px 2px var(--btn-box-shadow-active);
+}
+.page ul {
+  list-style: none;
+}
+
+/* links with white underline */
+
+.links-white-underline {
+  color: inherit;
+  text-decoration-color: var(--white-3);
+}
+
+/* links without underline */
+
+.links-without-underline {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* header */
+
+.header-nav-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.submenu-list {
+  color: var(--dark);
+  background-color: var(--white);
+  box-shadow: 0px 20px 20px var(--menu-list-box-shadow);
+}
+.submenu-item {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+}
+a.submenu-item-new {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.header-contacts {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.header-phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.header-nav-item:hover {
+  color: var(--dark);
+  background-color: var(--white);
+}
+.header-nav-item:active {
+  color: var(--dark);
+  background-color: var(--catalog-bg-active);
+  box-shadow: inset 0px 2px 1px var(--catalog-box-shadow-active);
+}
+.submenu-item:hover {
+  background-color: var(--menu-item-bg-hover);
+}
+.submenu-item:active {
+  background-color: var(--menu-item-bg-active);
+}
+
+/* block special-offer */
+
+.special-berry {
+  background-color: var(--berry-bg);
+}
+.special-choco {
+  background-color: var(--choco-bg);
+}
+.special-offer-item h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+.special-offer-item p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+}
+.special-offer-btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/* block bestsellers */
+
+.product-link {
+  font-weight: 500;
+  text-align: center;
+}
+.products-item p {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px var(--price-text-shadow);
+}
+.measure {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px var(--price-text-shadow);
+}
+.product-link:hover,
+.product-link:active {
+  color: var(--link-text-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+/* block benefits */
+
+.benefits {
+  color: var(--dark);
+  background-color: var(--benefits-bg);
+}
+.benefits-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* block blog */
+
+.blog {
+  color: var(--dark);
+  background-color: var(--white);
+}
+.blog p {
+  font-weight: 500;
+}
+.blog-link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: inherit;
+}
+.blog-link:hover,
+.blog-link:active {
+  color: var(--link-lightbg-text-hover);
+  text-decoration-color: var(--link-lightbg-underline-hover);
+}
+
+/* block subscription */
+
+.subscription {
+  color: var(--subscription-text);
+  background-color: var(--form-bg);
+}
+
+/* block contact-info */
+
+.contact-info {
+  background-color: var(--map-bg);
+  color: var(--dark);
+}
+.main-contacts {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  background-color: var(--main-contacts-bg);
+}
+.address,
+.main-phone,
+.main-contacts-btn {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+/* footer */
+
+.footer-nav-list {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: bold;
+}
+.copy p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
+}
+.footer-nav-item:hover,
+.footer-nav-item:active,
+.copy-link:hover,
+.copy-link:active {
+  color: var(--link-text-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
