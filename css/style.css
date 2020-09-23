@@ -227,10 +227,19 @@ a.submenu-item-new {
   box-shadow: inset 0px 2px 1px var(--catalog-box-shadow-active);
 }
 .submenu-item:hover {
+  color: var(--dark);
   background-color: var(--menu-item-bg-hover);
 }
 .submenu-item:active {
   background-color: var(--menu-item-bg-active);
+}
+.header-nav-item-current {
+  color: var(--white);
+  background-color: var(--bg-onpage);
+}
+.submenu-item-current {
+  color: var(--white);
+  background-color: var(--bg-onpage);
 }
 
 /* block special-offer */
@@ -359,4 +368,35 @@ a.submenu-item-new {
 .copy-link:active {
   color: var(--link-text-hover);
   text-decoration-color: var(--link-underline-hover);
+}
+
+/* breadcrumbs */
+
+.breadcrumbs-list {
+  font-size: 14px;
+  line-height: 16px;
+}
+.breadcrumbs-link:hover,
+.breadcrumbs-link:active {
+  color: var(--link-text-hover);
+  text-decoration-color: var(--link-underline-hover);
+}
+
+/* pagination */
+
+.pagination-list {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.pagination-link-current {
+  color: var(--dark);
+  background-color: var(--white);
+}
+.pagination-link:hover {
+  background-color: var(--white-2);
+}
+.pagination-link:active {
+  color: var(--dark);
+  background-color: var(--white);
 }
