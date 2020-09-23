@@ -13,7 +13,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
-  src: local('Roboto'),
+  src: local('Roboto-Medium'), local('RobotoMedium'), local('Roboto Medium'),
       url('../fonts/robotomedium.woff2') format('woff2'),
       url('../fonts/robotomedium.woff') format('woff');
   display: swap;
@@ -22,7 +22,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: bold;
-  src: local('Roboto'),
+  src: local('Roboto-Bold'), local('RobotoBold'), local('Roboto Bold'),
       url('../fonts/robotobold.woff2') format('woff2'),
       url('../fonts/robotobold.woff') format('woff');
   display: swap;
@@ -355,15 +355,19 @@ a.submenu-item-new {
 .footer-nav-list {
   font-size: 13px;
   line-height: 18px;
-  font-weight: bold;
 }
 .copy p {
   font-size: 12px;
   line-height: 18px;
   font-weight: normal;
 }
+.footer-nav-item-diff {
+  font-weight: bold;
+}
 .footer-nav-item:hover,
 .footer-nav-item:active,
+.footer-nav-item-diff:hover,
+.footer-nav-item-diff:active,
 .copy-link:hover,
 .copy-link:active {
   color: var(--link-text-hover);
