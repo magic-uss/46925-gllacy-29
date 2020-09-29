@@ -210,6 +210,14 @@ a.middle-button {
 
 /* product */
 
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 26px;
+  margin: 0;
+  padding: 0;
+}
+
 .product-link {
   font-weight: 500;
   text-align: center;
@@ -318,6 +326,7 @@ a.submenu-item-new {
 .header-nav-item-current {
   color: var(--white);
   background-color: var(--bg-onpage);
+  text-decoration: none;
 }
 
 .submenu-item-current {
