@@ -210,6 +210,11 @@ a.middle-button {
 
 /* product */
 
+.products-item {
+  display: flex;
+  flex-direction: column;
+}
+
 .products-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -219,11 +224,13 @@ a.middle-button {
 }
 
 .product-link {
+  order: 3;
   font-weight: 500;
   text-align: center;
 }
 
 .products-item p {
+  margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
@@ -254,23 +261,30 @@ a.middle-button {
 }
 
 .header-nav {
+  display: flex;
   grid-area: nav;
 }
 
 .user-navigation {
   grid-area: users;
-}
-
-.header-contacts {
-  grid-area: contacts;
+  max-width: 267px;
 }
 
 .header-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 748px;
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 24px;
   font-size: 16px;
   line-height: 18px;
   font-weight: bold;
+}
+
+.header-nav-item {
+  margin-right: 32px;
+  margin-bottom: 15px;
 }
 
 .submenu-list {
@@ -279,19 +293,22 @@ a.middle-button {
   box-shadow: 0px 20px 20px var(--menu-list-box-shadow);
 }
 
-.submenu-item {
+.submenu-link {
   font-size: 14px;
   line-height: 16px;
   font-weight: normal;
 }
 
-a.submenu-item-new {
+a.submenu-link-new {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
 }
 
 .header-contacts {
+  grid-area: contacts;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: bold;
@@ -303,33 +320,33 @@ a.submenu-item-new {
   font-weight: bold;
 }
 
-.header-nav-item:hover {
+.header-nav-link:hover {
   color: var(--dark);
   background-color: var(--white);
 }
 
-.header-nav-item:active {
+.header-nav-link:active {
   color: var(--dark);
   background-color: var(--catalog-bg-active);
   box-shadow: inset 0px 2px 1px var(--catalog-box-shadow-active);
 }
 
-.submenu-item:hover {
+.submenu-link:hover {
   color: var(--dark);
   background-color: var(--menu-item-bg-hover);
 }
 
-.submenu-item:active {
+.submenu-link:active {
   background-color: var(--menu-item-bg-active);
 }
 
-.header-nav-item-current {
+.header-nav-link-current {
   color: var(--white);
   background-color: var(--bg-onpage);
   text-decoration: none;
 }
 
-.submenu-item-current {
+.submenu-link-current {
   color: var(--white);
   background-color: var(--bg-onpage);
 }
@@ -500,12 +517,27 @@ a.submenu-item-new {
   padding-top: 15px;
 }
 
+.socials-list {
+  display: flex;
+  /*max-width: 267px;*/
+  margin: 0;
+  padding: 0;
+}
+
+.socials-item {
+  margin-right: 8px;
+}
+
 .footer-nav-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   font-size: 13px;
   line-height: 18px;
+}
+
+.copy {
+  max-width: 267px;
 }
 
 .copy p {
