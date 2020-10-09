@@ -10,7 +10,7 @@
 
   </head>
 
-  <body class="page-body">
+  <body class="page-body slider-bg-1">
 
     <header class="header container">
 
@@ -25,10 +25,9 @@
           <li class="header-nav-item">
             <a class="header-nav-link header-dropdown-link links-white-underline" href="">Каталог</a>
 
-            <!--Выпадающее подменю
               <ul class="submenu-list">
 
-                <li class="submenu-item">
+                <li class="submenu-item submenu-item-new">
                   <a class="submenu-link submenu-link-new links-white-underline" href="">Новинки</a>
                 </li>
 
@@ -50,7 +49,6 @@
 
               </ul>
 
-            -->
           </li>
 
           <li class="header-nav-item">
@@ -65,80 +63,149 @@
 
       </nav>
 
-      <div class="user-navigation">
+      <div class="user-contacts-wrap">
 
-        <a class="search-link links-without-underline" href="">Поиск</a>
+        <div class="user-nav">
 
-        <!--Форма поиска
-        <div class="search-popup">
-          <h2>Поиск по сайту</h2>
+          <a class="user-nav-link search-link links-without-underline" href="">
+
+            <h2 class="visually-hidden">Поиск по сайту</h2>
+
+            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.665l-4.921-4.932a6.144 6.144 0 00-.994-8.273 6.113 6.113 0 00-8.307.352 6.141 6.141 0 00-.293 8.328 6.11 6.11 0 008.262.937L14.659 16 16 14.665zm-9.918-4.288a4.245 4.245 0 01-3.928-2.63 4.269 4.269 0 01.922-4.643 4.248 4.248 0 014.632-.923 4.253 4.253 0 012.624 3.936 4.274 4.274 0 01-1.247 3.01 4.256 4.256 0 01-3.003 1.25z" fill="#fff"/></svg>
+
+            <!--Форма поиска
+            <div class="search-popup">
+
+            </div>
+            -->
+
+          </a>
+
+          <a class="user-nav-link login-link links-without-underline" href="">
+
+            <h2 class="visually-hidden">Личный кабинет</h2>
+
+            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2 2 0 002 2h13a2 2 0 002-2V2a2 2 0 00-2-2z" fill="#fff"/></svg>
+
+            <span>Вход</span>
+
+            <!--Форма входа
+            <div class="login-popup">
+
+            </div>
+            -->
+
+          </a>
+
+          <a class="user-nav-link cart-link links-without-underline" href="">
+
+            <h2 class="visually-hidden">Корзина</h2>
+
+            <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9zM7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2z" fill="#fff"/></svg>
+
+            <span>Пусто</span>
+
+            <!--Форма корзины
+            <div class="cart-popup">
+
+            </div>
+            -->
+
+          </a>
 
         </div>
-        -->
 
-        <a class="login-link links-without-underline" href="">Вход</a>
+        <div class="header-contacts">
 
-        <!--Форма входа
-        <div class="login-popup">
-          <h2>Личный кабинет</h2>
+          <p>с 10 до 20, ежедневно</p>
 
-        </div>
-        -->
-
-        <a class="cart-link links-without-underline" href="">Корзина</a>
-
-        <!--Форма корзины
-        <div class="cart-popup">
-          <h2>Корзина</h2>
+          <a class="header-phone links-without-underline" href="tel:88124502525">8 812 450-25-25</a>
 
         </div>
-        -->
 
       </div>
 
-      <p class="header-contacts">
-
-        с 10 до 20, ежедневно<br>
-        <a class="header-phone links-without-underline" href="tel:88124502525">8 812 450-25-25</a>
-
-      </p>
-
     </header>
 
-    <main class="page-content">
+    <main class="main-page-content">
 
       <div class="container">
 
-        <!--
-        <h1>Магазин мороженого «Глэйси»</h1>
-        -->
+        <h1 class="visually-hidden">Магазин мороженого «Глэйси»</h1>
 
         <section class="slider">
 
-          <!--
-          <h2>Слайдер с мороженым</h2>
-          -->
+          <h2 class="visually-hidden">Слайдер с мороженым</h2>
 
-          <!--Временная картинка для сетки-->
-          <img class="slider-1-bg" src="img/slider-1-bg.png" width="716" height="716" alt="Два мороженых в виде шариков в рожках.">
+          <ul class="slider-list">
+
+            <li class="slider-item slide-1 slide-current">
+
+              <div class="slide-blur slide-1-blur"></div>
+
+              <img src="img/slider-1-bg.png" width="716" height="716" alt="Два рожка с мороженым: бежевое с шоколадными прослойками и бело-розовое.">
+
+              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+
+              <a class="button slider-button" href="">Давайте оба!</a>
+
+            </li>
+
+            <li class="slider-item slide-2">
+
+              <div class="slide-blur slide-2-blur"></div>
+
+              <img src="img/slider-2-bg.png" width="716" height="716" alt="Два рожка с мороженым: шоколадное с кусочками шоколада и бежевое с оранжевыми кусочками.">
+
+              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+
+              <a class="button slider-button" href="">Давайте оба!</a>
+
+            </li>
+
+            <li class="slider-item slide-3">
+
+              <div class="slide-blur slide-3-blur"></div>
+
+              <img src="img/slider-3-bg.png" width="716" height="716" alt="Два рожка с мороженым: бежевое политое шоколадным соусом и розовое.">
+
+              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+
+              <a class="button slider-button" href="">Давайте оба!</a>
+
+            </li>
+
+          </ul>
+
+          <div class="slider-controls">
+
+            <button class="slider-btn slider-btn-current" type="button" aria-label="Первый слайд"></button>
+
+            <button class="slider-btn" type="button" aria-label="Второй слайд"></button>
+
+            <button class="slider-btn" type="button" aria-label="Третий слайд"></button>
+
+          </div>
 
         </section>
 
         <section class="special-offer">
 
-          <!--
-          <h2>Специальные предложения</h2>
-          -->
+          <h2 class="visually-hidden">Специальные предложения</h2>
 
           <ul class="special-offer-list">
 
             <li class="special-offer-item special-berry">
 
-              <h3>Малинка даром!</h3>
+              <div class="special-offer-inner">
 
-              <p>
-                При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-              </p>
+                <h3>Малинка даром!</h3>
+
+                <p>
+                  При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+                </p>
+
+              </div>
 
               <a class="button middle-button special-offer-btn" href="">Хочу варенье!</a>
 
@@ -146,11 +213,15 @@
 
             <li class="special-offer-item special-choco">
 
-              <h3>Шоколадки даром!</h3>
+              <div class="special-offer-inner">
 
-              <p>
-                При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-              </p>
+                <h3>Шоколадки даром!</h3>
+
+                <p>
+                  При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+                </p>
+
+              </div>
 
               <a class="button middle-button special-offer-btn" href="ice-cream.html">Хочу шоколадки!</a>
 
@@ -162,10 +233,9 @@
 
         <section class="bestsellers">
 
-          <h2>Хиты продаж</h2>
+          <h2 class="visually-hidden">Хиты продаж</h2>
 
           <ul class="bestsellers-list">
-            <!--На элементах списка должна быть анимация по наведению-->
 
             <li class="bestsellers-item products-item">
 
@@ -173,9 +243,15 @@
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
               </a>
 
-              <img src="img/product-1.jpg" width="267" height="267" alt="Ярко-оранжевое мороженое.">
+              <div class="img-wrap">
 
-              <p>310 ₽<span class="measure">/кг</span></p>
+                <img src="img/product-1.jpg" width="267" height="267" alt="Ярко-оранжевое мороженое.">
+
+              </div>
+
+              <p class="product-price">310 ₽<span class="measure">/кг</span></p>
+
+              <a class="button middle-button product-view-btn" href="">Быстрый просмотр</a>
 
             </li>
 
@@ -185,9 +261,15 @@
                 <h3>Сливочно-кофейное с кусочками шоколада</h3>
               </a>
 
-              <img src="img/product-2.jpg" width="267" height="267" alt="Мороженое кофейного цвета, посыпанное кусочками шоколада.">
+              <div class="img-wrap">
 
-              <p>380 ₽<span class="measure">/кг</span></p>
+                <img src="img/product-2.jpg" width="267" height="267" alt="Мороженое кофейного цвета, посыпанное кусочками шоколада.">
+
+              </div>
+
+              <p class="product-price">380 ₽<span class="measure">/кг</span></p>
+
+              <a class="button middle-button product-view-btn" href="">Быстрый просмотр</a>
 
             </li>
 
@@ -197,9 +279,15 @@
                 <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
               </a>
 
-              <img src="img/product-3.jpg" width="267" height="267" alt="Розовое мороженое с посыпкой из сердечек.">
+              <div class="img-wrap">
 
-              <p>355 ₽<span class="measure">/кг</span></p>
+                <img src="img/product-3.jpg" width="267" height="267" alt="Розовое мороженое с посыпкой из сердечек.">
+
+              </div>
+
+              <p class="product-price">355 ₽<span class="measure">/кг</span></p>
+
+              <a class="button middle-button product-view-btn" href="">Быстрый просмотр</a>
 
             </li>
 
@@ -209,9 +297,15 @@
                 <h3>Сливочное крем-брюле с карамельной подливкой</h3>
               </a>
 
-              <img src="img/product-4.jpg" width="267" height="267" alt="Бежевое мороженое с карамельным соусом.">
+              <div class="img-wrap">
 
-              <p>415 ₽<span class="measure">/кг</span></p>
+                <img src="img/product-4.jpg" width="267" height="267" alt="Бежевое мороженое с карамельным соусом.">
+
+              </div>
+
+              <p class="product-price">415 ₽<span class="measure">/кг</span></p>
+
+              <a class="button middle-button product-view-btn" href="">Быстрый просмотр</a>
 
             </li>
 
@@ -221,7 +315,7 @@
 
         <section class="benefits">
 
-          <h2>Преимущества</h2>
+          <h2 class="visually-hidden">Преимущества</h2>
 
           <p class="benefits-title">
             Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
@@ -230,19 +324,27 @@
           <ul class="benefits-list">
 
             <li class="benefits-item">
-              Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+
+              <p class="benefit-desc benefit-desc-ice">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+
             </li>
 
             <li class="benefits-item">
-              Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+
+              <p class="benefit-desc benefit-desc-cow">Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+
             </li>
 
             <li class="benefits-item">
-              Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+
+              <p class="benefit-desc benefit-desc-leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+
             </li>
 
             <li class="benefits-item">
-              Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+
+              <p class="benefit-desc benefit-desc-therm">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+
             </li>
 
           </ul>
@@ -253,23 +355,27 @@
 
           <article class="blog">
 
-            <h2>Блог</h2>
+            <h2 class="visually-hidden">Блог</h2>
 
             <p>Новое в нашем блоге</p>
 
-            <a class="blog-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
+            <a class="blog-link" href="">10 способов сервировки фруктовых щербетов к&nbsp;столу</a>
 
           </article>
 
           <section class="subscription">
 
-            <h2>Подписка</h2>
+            <h2 class="visually-hidden">Подписка</h2>
 
-            <p>
-              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
-            </p>
+            <div class="subscription-inner">
 
-            <!--Здесь будет форма ввода-->
+              <p>
+                Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+              </p>
+
+              <!--Здесь будет форма ввода-->
+
+            </div>
 
           </section>
 
@@ -279,9 +385,7 @@
 
       <section class="contact-info">
 
-        <!--
-        <h2>Как нас найти</h2>
-        -->
+        <h2 class="visually-hidden">Как нас найти</h2>
 
         <section class="map">
 
@@ -320,24 +424,48 @@
 
       <section class="socials">
 
-        <h2>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
 
         <ul class="socials-list">
 
           <li class="socials-item">
-            <a class="social-button links-without-underline" href="">Фейсбук</a>
+
+            <a class="social-button links-without-underline social-fb" href="">
+
+              <span class="visually-hidden">Фейсбук</span>
+
+            </a>
+
           </li>
 
           <li class="socials-item">
-            <a class="social-button links-without-underline" href="">Вконтакте</a>
+
+            <a class="social-button links-without-underline social-vk" href="">
+
+              <span class="visually-hidden">Вконтакте</span>
+
+            </a>
+
           </li>
 
           <li class="socials-item">
-            <a class="social-button links-without-underline" href="">Инстаграм</a>
+
+            <a class="social-button links-without-underline social-ig" href="">
+
+              <span class="visually-hidden">Инстаграм</span>
+
+            </a>
+
           </li>
 
           <li class="socials-item">
-            <a class="social-button links-without-underline" href="">Твиттер</a>
+
+            <a class="social-button links-without-underline social-tw" href="">
+
+              <span class="visually-hidden">Твиттер</span>
+
+            </a>
+
           </li>
 
         </ul>
@@ -370,7 +498,9 @@
 
       <section class="copy">
 
-        <a class="copy-logo links-without-underline" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="copy-logo links-without-underline" href="https://htmlacademy.ru/intensive/htmlcss">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
 
         <p>
           Сделано в <a class="copy-link links-white-underline" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
