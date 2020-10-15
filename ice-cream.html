@@ -129,6 +129,8 @@
 
                 <span>300 руб.</span>
 
+                <button class="product-remove" type="button" aria-label="Удалить из корзины"></button>
+
               </li>
 
               <li class="cart-popup-item">
@@ -140,6 +142,8 @@
                 <p class="cart-weight">1,5 кг х <span class="cart-price">300 руб.</span></p>
 
                 <span>450 руб.</span>
+
+                <button class="product-remove" type="button" aria-label="Удалить из корзины"></button>
 
               </li>
 
@@ -368,29 +372,49 @@
 
         </ul>
 
-        <ul class="pagination-list">
+        <div class="pagination">
 
-          <li class="pagination-item">
-            <a class="pagination-link pagination-link-current links-without-underline">1</a>
-          </li>
+          <div class="pagination-inner">
 
-          <li class="pagination-item">
-            <a class="pagination-link links-without-underline" href="">2</a>
-          </li>
+            <a class="pagination-arrow pagination-arrow-previous disabled" href="">
 
-          <li class="pagination-item">
-            <a class="pagination-link links-without-underline" href="">3</a>
-          </li>
+              <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000 .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0 00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/></svg>
 
-          <li class="pagination-item">
-            <a class="pagination-link links-without-underline" href="">4</a>
-          </li>
+            </a>
 
-          <li class="pagination-item">
-            <a class="pagination-link links-without-underline" href="">5</a>
-          </li>
+            <ul class="pagination-list">
 
-        </ul>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-current links-without-underline">1</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link links-without-underline" href="">2</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link links-without-underline" href="">3</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link links-without-underline" href="">4</a>
+              </li>
+
+              <li class="pagination-item">
+                <a class="pagination-link links-without-underline" href="">5</a>
+              </li>
+
+            </ul>
+
+            <a class="pagination-arrow pagination-arrow-next" href="">
+
+              <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000 .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0 00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/></svg>
+
+            </a>
+
+          </div>
+
+        </div>
 
       </section>
 

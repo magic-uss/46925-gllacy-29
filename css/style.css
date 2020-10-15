@@ -613,11 +613,22 @@ a.middle-button:active {
   padding: 0 13px;
 }
 
-.cart-popup-item::before {
+.product-remove {
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  width: 11px;
+  height: 11px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.product-remove::before {
   content: "";
   position: absolute;
-  top: 11px;
-  left: -20px;
+  top: 0;
+  left: 0;
   width: 11px;
   height: 11px;
   background-image: url('../img/cart-delete-icon.svg');
@@ -1306,13 +1317,23 @@ a.slider-button:active {
 
 /* pagination */
 
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+  padding-right: 13px;
+}
+
+.pagination-inner {
+  display: inline-flex;
+  position: relative;
+}
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
   margin: 0;
   padding: 0;
-  padding-top: 80px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1321,8 +1342,9 @@ a.slider-button:active {
 .pagination-link {
   display: block;
   padding: 5px 7px 11px 9px;
-  width: 10px;
-  height: 10px;
+  width: 26px;
+  height: 26px;
+  box-sizing: border-box;
   border-radius: 50%;
 }
 
@@ -1332,10 +1354,6 @@ a.slider-button:active {
 
 .pagination-item:not(:last-child) {
   margin-right: 4px;
-}
-
-.pagination-item:last-child {
-  padding-right: 13px;
 }
 
 .pagination-link-current {
@@ -1355,28 +1373,43 @@ a.slider-button:active {
   cursor: pointer;
 }
 
-.pagination-item:first-child::before {
-  content: "";
+.pagination-arrow-previous {
   position: absolute;
   top: 8px;
   left: -16px;
   width: 7px;
   height: 12px;
-  background-image: url(../img/pagination-left-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }
 
-.pagination-item:last-child::after {
-  content: "";
+.pagination-arrow-next {
   position: absolute;
   top: 8px;
-  right: 0px;
+  right: -16px;
   width: 7px;
   height: 12px;
-  background-image: url(../img/pagination-right-icon.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
+}
+
+.pagination-arrow svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 12px;
+}
+
+.pagination-arrow-previous svg {
+  transform: rotate(180deg);
+}
+
+.pagination-arrow.disabled,
+.pagination-arrow:disabled {
+  cursor: default;
+}
+
+.pagination-arrow.disabled path,
+.pagination-arrow:disabled path,
+.pagination-arrow:hover path {
+  fill: var(--white-2)
 }
 
 /* modal */
