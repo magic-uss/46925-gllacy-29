@@ -22,7 +22,7 @@
 
         <ul class="header-nav-list">
 
-          <li class="header-nav-item">
+          <li class="header-nav-item  header-dropdown-item">
             <a class="header-nav-link header-dropdown-link links-white-underline" href="">Каталог</a>
 
             <ul class="submenu-list">
@@ -67,7 +67,7 @@
 
         <div class="user-nav">
 
-          <div class="user-nav-inner">
+          <div class="user-nav-inner search-inner">
 
             <a class="user-nav-link search-link links-without-underline" href="">
 
@@ -93,7 +93,7 @@
 
           </div>
 
-          <div class="user-nav-inner">
+          <div class="user-nav-inner login-inner">
 
             <a class="user-nav-link login-link links-without-underline" href="">
 
@@ -121,7 +121,7 @@
 
                 <div class="popup-button-wrap">
 
-                  <button class="button middle-button" type="submit">Войти</button>
+                  <button class="button popup-button" type="submit">Войти</button>
 
                   <div class="popup-link-wrap">
 
@@ -267,7 +267,7 @@
 
           <ul class="bestsellers-list products-list">
 
-            <li class="bestsellers-item products-item" tabindex="0">
+            <li class="bestsellers-item products-item">
 
               <a class="product-link links-white-underline" href="">
                 <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -281,7 +281,7 @@
 
             </li>
 
-            <li class="bestsellers-item products-item" tabindex="0">
+            <li class="bestsellers-item products-item">
 
               <a class="product-link links-white-underline" href="">
                 <h3>Сливочно-кофейное с кусочками шоколада</h3>
@@ -295,10 +295,10 @@
 
             </li>
 
-            <li class="bestsellers-item products-item" tabindex="0">
+            <li class="bestsellers-item products-item">
 
               <a class="product-link links-white-underline" href="">
-                <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <h3>Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</h3>
               </a>
 
               <img src="img/product-3.png" width="267" height="267" alt="Розовое мороженое с посыпкой из сердечек.">
@@ -309,7 +309,7 @@
 
             </li>
 
-            <li class="bestsellers-item products-item" tabindex="0">
+            <li class="bestsellers-item products-item">
 
               <a class="product-link links-white-underline" href="">
                 <h3>Сливочное крем-брюле с&nbsp;карамельной подливкой</h3>
@@ -546,23 +546,21 @@
 
         <form class="form form-modal" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset class="feedback">
+          <h3>Мы обязательно вам ответим!</h3>
 
-            <legend>Мы обязательно вам ответим!</legend>
+          <label for="modal-form-name" class="visually-hidden">Введите имя и фамилию</label>
 
-            <label for="modal-form-name" class="visually-hidden">Введите имя и фамилию</label>
+          <input id="modal-form-name" type="text" name="name" placeholder="Имя Фамилия">
 
-            <input id="modal-form-name" type="text" name="name" placeholder="Имя Фамилия">
+          <label for="modal-form-email" class="visually-hidden">Введите адрес электронной почты</label>
 
-            <label for="modal-form-email" class="visually-hidden">Введите адрес электронной почты</label>
+          <input id="modal-form-email" type="email" name="email" placeholder="email@example.com">
 
-            <input id="modal-form-email" type="email" name="email" placeholder="email@example.com">
+          <label for="modal-form-message" class="visually-hidden">Напишите сообщение</label>
 
-            <textarea name="message" rows="5" placeholder="В свободной форме"></textarea>
+          <textarea id="modal-form-message" name="message" rows="5" placeholder="В свободной форме"></textarea>
 
-            <button class="button middle-button" type="submit">Отправить</button>
-
-          </fieldset>
+          <button class="button middle-button" type="submit">Отправить</button>
 
         </form>
 
