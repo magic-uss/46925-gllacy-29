@@ -23,7 +23,7 @@
         <ul class="header-nav-list">
 
           <li class="header-nav-item  header-dropdown-item">
-            <a class="header-nav-link header-dropdown-link links-white-underline" href="">Каталог</a>
+            <a class="header-nav-link header-dropdown-link header-nav-link-current links-white-underline" href="">Каталог</a>
 
             <ul class="submenu-list">
 
@@ -32,7 +32,7 @@
               </li>
 
               <li class="submenu-item">
-                <a class="submenu-link links-white-underline" href="ice-cream.html">Сливочное</a>
+                <a class="submenu-link submenu-link-current links-white-underline" href="ice-cream.html">Сливочное</a>
               </li>
 
               <li class="submenu-item">
@@ -239,13 +239,13 @@
 
             <select id="sorting-form" name="sorting">
 
-              <option>по популярности</option>
+              <option value="by popularity">по популярности</option>
 
-              <option>сначала недорогие</option>
+              <option value="inexpensive first">сначала недорогие</option>
 
-              <option>сначала дорогие</option>
+              <option value="expensive first">сначала дорогие</option>
 
-              <option>по жирности</option>
+              <option value="by fat content">по жирности</option>
 
             </select>
 
@@ -260,6 +260,8 @@
           <div class="range-filter">
 
             <div class="scale">
+
+              <div class="bar"></div>
 
               <div class="toggle toggle-min" tabindex="0"></div>
 
@@ -511,7 +513,7 @@
 
           <div class="pagination-inner">
 
-            <a class="pagination-arrow pagination-arrow-previous disabled" href="" aria-label="Назад">
+            <a class="pagination-arrow pagination-arrow-previous disabled href="" aria-label="Назад">
 
               <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M6.84 5.66L.94.15A.57.57 0 00.53 0a.57.57 0 00-.38.15.47.47 0 000 .71L5.69 6 .16 11.17a.5.5 0 00-.16.35c0 .07.01.14.04.2a.5.5 0 00.12.16c.1.08.24.13.39.12a.54.54 0 00.37-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/></svg>
 
