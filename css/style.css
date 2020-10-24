@@ -7,7 +7,7 @@
   src: local('Roboto'),
       url('../fonts/roboto.woff2') format('woff2'),
       url('../fonts/roboto.woff') format('woff');
-  display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,7 +17,7 @@
   src: local('Roboto-Medium'), local('RobotoMedium'), local('Roboto Medium'),
       url('../fonts/robotomedium.woff2') format('woff2'),
       url('../fonts/robotomedium.woff') format('woff');
-  display: swap;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: local('Roboto-Bold'), local('RobotoBold'), local('Roboto Bold'),
       url('../fonts/robotobold.woff2') format('woff2'),
       url('../fonts/robotobold.woff') format('woff');
-  display: swap;
+  font-display: swap;
 }
 
 
@@ -65,7 +65,7 @@
   --slider-bg-3: rgba(239, 224, 218, 0.75);
   --main-bg-3: #9D8B84;
   --berry-bg: #DB6083;
-  --choco-bg: #937369;
+  --chocolate-bg: #937369;
   --benefits-bg: #F2E6CF;
   --map-bg: #EEE6CA;
   --modal-overlay: rgba(0, 0, 0, 0.3);
@@ -1382,9 +1382,9 @@ img {
   background-image: url('../img/berry-bg.jpg');
 }
 
-.special-choco {
-  background-color: var(--choco-bg);
-  background-image: url('../img/choco-bg.jpg');
+.special-chocolate {
+  background-color: var(--chocolate-bg);
+  background-image: url('../img/chocolate-bg.jpg');
 }
 
 .special-offer-item {
